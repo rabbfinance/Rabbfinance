@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:color="http://schemas.android.com/tools"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/todo"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Hola soy el producto y spy demasiado largo y bla bla bla"
+            android:textColor="@color/title"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/precio_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todo"
+            android:text="id: " />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/precio_label"
+            android:layout_alignBottom="@+id/precio_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="55dp"
+            android:text="155"
+            android:textColor="@color/title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/disponible_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id"
+            android:text="Estado: " />
+
+        <TextView
+            android:id="@+id/ready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/disponible_label"
+            android:layout_alignBottom="@+id/disponible_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="55dp"
+            android:text="no disponible"
+            android:textColor="@color/title"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/mark_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="Ready"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:theme="@style/addButton" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
